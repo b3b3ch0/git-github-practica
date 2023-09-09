@@ -1,0 +1,128 @@
+<html>
+<head><title>Ejemplo de formulario avanzado</title></head>
+<body>
+    <h2>Punto 1</h2>
+<h3>Formulario avanzado</h3>
+<form action="http://....." method="post">
+<label for="so">Sistema operativo</label> <br/>
+<select id="so" name="so">
+<option value="" selected="selected">- selecciona -</option>
+<option value="windows">Windows</option>
+<option value="mac">Mac</option>
+<option value="linux">Linux</option>
+<option value="otro">Otro</option>
+</select>
+<br>
+<br>
+<label for="so2">Sistema operativo</label> <br/>
+<select id="so2" name="so2" size="5">
+<option value="windows" selected="selected">Windows</option>
+<option value="mac">Mac</option>
+<option value="linux">Linux</option>
+<option value="otro">Otro</option>
+</select>
+<br>
+<br>
+<label for="so3">Sistema operativo</label> <br/>
+<select id="so3" name="so3" size="5" multiple="multiple">
+<option value="windows" selected="selected">Windows</option>
+<option value="mac">Mac</option>
+<option value="linux">Linux</option>
+<option value="otro">Otro</option>
+</select>
+<br>
+<h2>Datos del Producto</h2>
+<label for="nombre">Nombre del producto</label> <br/>
+<input type="text" id="nombre" name="nombre" value="" />
+<br>
+<label for="descripcion">Descripción del producto</label> <br/>
+<textarea id="descripcion" name="descripcion" cols="40" rows="5"></textarea>
+<br>
+<h2>Punto 2</h2>
+<h2>Rellena tu CV</h2>
+<fieldset>
+    <legend>Datos personales</legend>
+    <label for="provincia">Provincia</label>
+    <br>
+    <select name="prov" id="prov">
+        <option value="" selected="selected">-selecciona-</option>
+        <option value="salta">Salta</option>
+        <option value="jujuy">Jujuy</option>
+        <option value="tucumán">Tucumán</option>
+        <option value="otra">Otra</option>
+    </select>
+    <br>
+    <br>
+    <label for="fech_nac">Fecha de nacimiento</label>
+    <br>
+    <input type="text" id="fech_nac" name="fech_nac" value="" size="3" maxlength="2"/>de
+    <select name="fech_nac" id="fech_nac">  
+        <option value="enero" selected="selected">Enero</option>
+        <option value="febrero">Febrero</option>
+        <option value="marzo">Marzo</option>
+        <option value="abril">Abril</option>
+        <option value="mayo">Mayo</option>
+        <option value="junio">Junio</option>
+        <option value="julio">Julio</option>
+        <option value="agosto">Agosto</option>
+        <option value="septiembre">Septiembre</option>
+        <option value="octubre">Octubre</option>
+        <option value="noviembre">Noviembre</option>
+        <option value="diciembre">Diciembre</option>   
+    </select>
+    de
+    <input type="text" id="fech_nac" name="fech_nac" value="" size="5" maxlength="4"/>
+    <br>
+    <br>
+    <label for="temas de interes">Temas de interés</label>
+    <br>
+    <textarea name="temas de interes" id="temas de interes" cols="50" rows="10"></textarea>
+</fieldset>
+<h2>Punto 3</h2>
+<h3>Información sobre el producto</h3>
+<fieldset>
+    <legend>
+        Datos básicos
+    </legend>
+    <label for="nombre">Nombre</label>
+    <br>
+    <input type="text" name="nombre" value="" size="60"/>
+    <br>
+    <br> 
+    <label for="descripcion">Descripcion</label>
+    <br>
+    <textarea name="descripcion" id="descripcion" cols="80" rows="10"></textarea>
+    <br>
+    <br>
+    Foto
+    <input type="text" name="espacio" id="espacio" value="" size="5"/>
+     <input type="file" name="adjunto"/>
+    <br>
+    <br>
+    <input type="checkbox" name="contador de visitas" value=""/> Añadir contador de visitas
+</fieldset>
+
+<fieldset>
+    <legend>Datos económicos</legend>
+    <label for="precio">Precio</label>
+    <input type="text" name="precio" size="5"> € &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <label for="impuestos">Impuestos</label>
+    <select name="impuestos" id="impuestos">
+        <option value="4%"selected="selected">4%</option>
+        <option value="7%">7%</option>
+        <option value="16%">16%</option>
+        <option value="25%">25%</option>
+    </select>
+    <br>
+    <br>
+    <label for="promoción">Promoción</label>
+    <br>
+    <input type="radio" name="promo" value="ninguno" checked="checked"> Ninguno
+    <br>
+    <input type="radio" name="promo" value="transporte gratuito"> Transporte gratuito
+    <br>
+    <input type="radio" name="promo" value="descuento"> Descuento 5%
+</fieldset>
+</form>
+</body>
+</html>
